@@ -1,0 +1,30 @@
+{
+  "name": "jokesapi-project",
+  "version": "1.0.0",
+  "description": "This is a learning project for learning Node, APIs, Express, EJS, Axios, Express. ",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "learn"
+  ],
+  "author": "Ankit Kaushik",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.23.2",
+    "axios": "^1.6.0",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "npm-run-all": "^4.1.5",
+    "path": "^0.12.7",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
