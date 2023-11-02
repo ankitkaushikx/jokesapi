@@ -11,19 +11,33 @@
         </div>
         <div class="form">
             <form action="/getNewJoke" method="POST">
-                <select name="type" id="">
-                    <option value="Any">Any</option>
-                    <option value="Misc">Misc</option>
-                    <option value="Programming">Programming</option>
-                    <option value="Dark">Dark</option>
-                    <option value="Pun">Pun</option>
-                    <option value="Spooky">Spooky</option>
-                    <option value="Christmas">Christmas</option>
-                </select>
-                <input type="submit" value="Get A New Joke">
+                <div class="form-fields">
+                    <select name="category" id="">
+                        <option value="Any">Any</option>
+                        <option value="Misc">Misc</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Dark">Dark</option>
+                        <option value="Pun">Pun</option>
+                        <option value="Spooky">Spooky</option>
+                        <option value="Christmas">Christmas</option>
+                    </select>
+                    <label>
+                        <input type="radio" name="lang" value="en" checked> English
+                    </label>
+                    <label>
+                        <input type="radio" name="lang" value="de"> German
+                    </label>
+                    <label>
+                        <input type="radio" name="lang" value="cs">Serbia
+                    </label>
+                    <input type="submit" value="Get A New Joke">
+                </div>
             </form>
         </div>
-    </div>
 
 
-    <%- include("./partials/footer.ejs") %>
+
+
+
+
+        <%- include("./partials/footer.ejs") %>

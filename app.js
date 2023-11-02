@@ -25,10 +25,11 @@ app.get("/", async (req, res) => {
 });
 
 app.post("/getNewJoke", async (req, res) => {
-  const type = req.body.type;
-  console.log(type);
-  const response = await axios.get(API_URL + "/" + type);
-
+  ///? ----------------------------With Language Support
+  const category = req.body.category; // Category For Joke
+  const langCode = req.body.lang; ///from language Radio Button
+  const response = await axios.get(API_URL + "/" + category + "?" + `lang=${langCode}`);
+  console.log(API_URL + "/" + category + "?" + `lang=${langCode}`);
   const result = response.data;
   res.render("index", { joke: result });
 });
